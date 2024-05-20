@@ -1,0 +1,20 @@
+﻿<Window x:Class="ESP32CAMviewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ESP32CAMviewer"
+        mc:Ignorable="d"
+        Title="ESP32camera. Search and view." Height="471.18" Width="1007.295" Background="Black" FontFamily="Consolas">
+    <Grid>
+        <TextBox x:Name="TextBoxIP" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Or input here" VerticalAlignment="Top" Width="101" Background="DimGray" Foreground="White" UndoLimit="2" RenderTransformOrigin="0.5,0.5" FontSize="12" MaxLines="1" MaxLength="15" TextAlignment="Center" SelectionBrush="Maroon" Margin="116,10,0,0" TextChanged="TextBoxIP_TextChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ToolTip="Enter IP as *.*.*.*"/>
+        <Button x:Name="ButtonVideo" Content="Video Start" HorizontalAlignment="Left" Height="23" Margin="328,10,0,0" VerticalAlignment="Top" Width="101" Background="Maroon" Foreground="White" FontFamily="Consolas" FontSize="12" Click="ButtonVideo_Click" IsEnabled="False"/>
+        <Button x:Name="ButtonVideo2" Content="Video Stop" HorizontalAlignment="Left" Height="23" Margin="434,10,0,0" VerticalAlignment="Top" Width="101" Background="Maroon" Foreground="White" FontFamily="Consolas" FontSize="12" Click="ButtonVideo2_Click" IsEnabled="False"/>
+        <Button x:Name="ButtonFind" Content="Search IP" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="101" Background="Maroon" Foreground="White" Height="23" Click="ButtonFind_Click" ToolTip="Scan LAN x.x.x.*"/>
+        <Button x:Name="ButtonSave" Content="Save" HorizontalAlignment="Left" Margin="222,10,0,0" VerticalAlignment="Top" Width="101" Height="23" Background="Maroon" Foreground="White" Click="ButtonSave_Click" IsEnabled="False" ToolTip="Save IP to local file"/>
+        <Image x:Name="ImageVideo" Margin="0,38,0,0" Source="icon64x64_2.png"/>
+        <Label x:Name="labelDebug" Content="(c)Airrr(r) '24" Margin="540,10,116,0" VerticalAlignment="Top" Height="23" Foreground="Gold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="ButtonAbout" Content="About" Margin="0,10,10,0" VerticalAlignment="Top" Height="23" Background="Maroon" Foreground="White" HorizontalAlignment="Right" Width="101" Click="ButtonAbout_Click"/>
+
+    </Grid>
+</Window>
